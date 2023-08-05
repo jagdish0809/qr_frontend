@@ -1,0 +1,540 @@
+.wrapper {
+  position: relative;
+  width: 750px;
+  height: 500px;
+  background: transparent;
+  border: 2px solid #0ef;
+  overflow: hidden;
+  box-shadow: 0 0 25px #0ef;
+}
+
+.wrapper .formBox {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .formBox.login {
+  left: 0;
+  padding: 0 60px 0 40px;
+  /* display: none; */
+}
+
+.wrapper .formBox.login .animation1,
+.wrapper .formBox.login .animation2,
+.wrapper .formBox.login .animation3,
+.wrapper .formBox.login .animation4,
+.wrapper .formBox.login .animation5,
+.wrapper .formBox.login .animation6 {
+  transform: translateX(0%);
+  transition: 0.7s ease;
+  opacity: 1;
+  filter: blur(0);
+}
+
+.wrapper.active .formBox.login .animation1 {
+  transition-delay: 0.1s;
+  transform: translateX(-150%);
+  opacity: 0;
+  filter: blur(10px);
+}
+.wrapper.active .formBox.login .animation2 {
+  transition-delay: 0.2s;
+  transform: translateX(-150%);
+  opacity: 0;
+  filter: blur(10px);
+}
+.wrapper.active .formBox.login .animation3 {
+  transition-delay: 0.3s;
+  transform: translateX(-150%);
+  opacity: 0;
+  filter: blur(10px);
+}
+.wrapper.active .formBox.login .animation4 {
+  transition-delay: 0.4s;
+  transform: translateX(-150%);
+  opacity: 0;
+  filter: blur(10px);
+}
+.wrapper.active .formBox.login .animation5 {
+  transition-delay: 0.5s;
+  transform: translateX(-150%);
+  opacity: 0;
+  filter: blur(10px);
+}
+.wrapper.active .formBox.login .animation6 {
+  transition-delay: 0.6s;
+  transform: translateX(-150%);
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.wrapper .formBox.login .animation1{
+  transform: translateX(0%);
+  transition: 0.7s ease;
+  opacity: 1;
+  filter: blur(0);
+  transition-delay: 1.4s;
+}
+
+.wrapper .formBox.login .animation2{
+  transform: translateX(0%);
+  transition: 0.7s ease;
+  opacity: 1;
+  filter: blur(0);
+  transition-delay: 1.5s;
+}
+
+.wrapper .formBox.login .animation3{
+  transform: translateX(0%);
+  transition: 0.7s ease;
+  opacity: 1;
+  filter: blur(0);
+  transition-delay: 1.6s;
+}
+
+.wrapper .formBox.login .animation4{
+  transform: translateX(0%);
+  transition: 0.7s ease;
+  opacity: 1;
+  filter: blur(0);
+  transition-delay: 1.7s;
+}
+
+.wrapper .formBox.login .animation5{
+  transform: translateX(0%);
+  transition: 0.7s ease;
+  opacity: 1;
+  filter: blur(0);
+  transition-delay: 1.8s;
+}
+
+.wrapper .formBox.login .animation6{
+  transform: translateX(0%);
+  transition: 0.7s ease;
+  opacity: 1;
+  filter: blur(0);
+  transition-delay: 1.9s;
+}
+
+.wrapper .formBox.register {
+  right: 0;
+  padding: 0 40px 0 60px;
+  /* display: none; */
+}
+
+button.animation4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 0 30px;
+  margin-top: 30px;
+  /* transform: translateX(250%);
+  transition: 0.7s ease;
+  transition-delay: ;
+  opacity: 0;
+  filter: blur(10px); */
+}
+
+.wrapper .formBox.register .animation1,
+.wrapper .formBox.register .animation2,
+.wrapper .formBox.register .animation3,
+button.animation4{
+  transform: translateX(150%);
+  transition: 0.7s ease;
+  transition-delay: 1.4s;
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.wrapper.active .formBox.register .animation1 {
+  transform: translateX(0%);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.wrapper.active .formBox.register .animation2 {
+  transition-delay: 1.5s;
+  transform: translateX(0%);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.wrapper.active .formBox.register .animation3 {
+  transition-delay: 1.6s;
+  transform: translateX(0%);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.wrapper.active button.animation4{
+  transition-delay: 1.8s;
+  transform: translateX(0%);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.wrapper .formBox.register .animation1{
+  transform: translateX(150%);
+  transition: 0.7s ease;
+  opacity: 0;
+  filter: blur(10px);
+  transition-delay: 0.1s;
+}
+
+.wrapper .formBox.register .animation2{
+  transform: translateX(150%);
+  transition: 0.7s ease;
+  opacity: 0;
+  filter: blur(10px);
+  transition-delay: 0.2s;
+}
+
+.wrapper .formBox.register .animation3{
+  transform: translateX(150%);
+  transition: 0.7s ease;
+  opacity: 0;
+  filter: blur(10px);
+  transition-delay: 0.3s;
+}
+
+button.animation4{
+  transform: translateX(150%);
+  transition: 0.7s ease;
+  opacity: 0;
+  filter: blur(10px);
+  transition-delay: 0.4s;
+}
+
+.imageContainer {
+  position: relative;
+  margin-bottom: 15px;
+  height: 182px;
+  width: 182px;
+  background: #081b29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imageContainer:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 182px;
+  height: 182px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    transparent,
+    #0ef,
+    #0ef,
+    #0ef
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 5s linear infinite;
+}
+
+.imageContainer:after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 182px;
+  height: 182px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    transparent,
+    #0ef,
+    #0ef,
+    #0ef
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 5s linear infinite;
+  animation-delay: 2.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.imageContainer:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  /* z-index: 1000; */
+}
+
+.wrapper .formBox .imageContainer .imgBackground {
+  height: 170px;
+  width: 170px;
+  z-index: 1000;
+}
+h2 {
+  color: #fff;
+}
+
+.formBox h2 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+}
+
+.formBox .inputBox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 25px 0;
+}
+
+.inputBox input {
+  width: 100%;
+  height: 100%;
+  background: transparent !important;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  padding-right: 23px;
+  border-bottom: 2px solid #fff;
+  transition: 0.5s;
+}
+
+.inputBox input:focus,
+.inputBox input:valid {
+  border-bottom-color: #0ef;
+}
+
+.inputBox label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label {
+  top: -5px;
+  color: #0ef;
+}
+
+.inputBox i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.inputBox input:focus ~ i,
+.inputBox input:valid ~ i {
+  color: #0ef;
+}
+
+.formBox a{
+  width: 100%;
+}
+
+.btn {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #0ef;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  transition: 0.5s;
+  top: -160%;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  background: linear-gradient(#081b29, #0ef, #081b29);
+  z-index: -1;
+}
+
+.btn:hover::before {
+  top: 0;
+}
+
+.formBox .logregLink {
+  font-size: 14.5px;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logregLink p a {
+  color: #0ef;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logregLink p a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .infoText {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper .infoText.login {
+  right: 0;
+  text-align: right;
+  padding: 0 40px 60px 150px;
+  transition: 0.7s ease;
+  opacity: 1;
+  filter: blur(0);
+}
+
+.wrapper.active .infoText.login {
+  transition-delay: 0.2s;
+  transform: translateX(70%);
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.wrapper .infoText.login{
+  transform: translateX(0%);
+  transition: 0.7s ease;
+  opacity: 1;
+  filter: blur(0);
+  transition-delay: 1.4s;
+}
+
+.wrapper .infoText.register {
+  left: 0;
+  text-align: left;
+  padding: 0 150px 60px 40px;
+  transform: translateX(-70%);
+  transition: 0.7s ease;
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.wrapper.active .infoText.register{
+  transition-delay: 1.4s;
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0%);
+}
+
+.wrapper .infoText.register{
+  transform: translateX(-70%);
+  transition: 0.7s ease;
+  opacity: 0;
+  filter: blur(10px);
+}
+
+
+.infoText h3 {
+  font-size: 28px;
+  color: #fff;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.infoText p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.wrapper .bgAnimate {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  width: 850px;
+  height: 600px;
+  background: linear-gradient(45deg, #081b29, #0ef);
+  border-bottom: 3px solid #0ef;
+  transform: rotate(10deg) skewY(44deg);
+  transform-origin: bottom right;
+  transition: 0.7s ease;
+}
+
+.wrapper.active .bgAnimate {
+  transition-delay: 0.7s;
+  transform: rotate(0deg) skewY(0deg);
+}
+
+.wrapper .bgAnimate{
+  transform: rotate(10deg) skewY(44deg);
+  transition: 0.7s ease;
+  transition-delay: 1.4s;
+}
+
+.wrapper .bgAnimate2 {
+  position: absolute;
+  top: 100%;
+  left: 250px;
+  width: 850px;
+  height: 800px;
+  background: #081b29;
+  border-top: 3px solid #0ef;
+  transform: rotate(0deg) skewY(0deg);
+  transform-origin: bottom left;
+  transition: 0.7s ease;
+}
+
+.wrapper.active .bgAnimate2 {
+  transition-delay: 1.4s;
+  transform: rotate(-11deg) skewY(-45deg);
+}
+
+.wrapper .bgAnimate2{
+  transform: rotate(0deg) skewY(0deg);
+  transition: 0.7s ease;
+  transition-delay: 0.7s;
+}
+
+i{
+  font-size: 20px;
+  color: #fff;
+}
+
+
+.animation4 h4{
+  font-size: 18px;
+  color: #fff;
+}
