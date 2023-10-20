@@ -2,7 +2,7 @@
   position: relative;
   width: 750px;
   height: 500px;
-  background: transparent;
+  background: #081b29;
   border: 2px solid #0ef;
   overflow: hidden;
   box-shadow: 0 0 25px #0ef;
@@ -74,7 +74,7 @@
   filter: blur(10px);
 }
 
-.wrapper .formBox.login .animation1{
+.wrapper .formBox.login .animation1 {
   transform: translateX(0%);
   transition: 0.7s ease;
   opacity: 1;
@@ -82,7 +82,7 @@
   transition-delay: 1.4s;
 }
 
-.wrapper .formBox.login .animation2{
+.wrapper .formBox.login .animation2 {
   transform: translateX(0%);
   transition: 0.7s ease;
   opacity: 1;
@@ -90,7 +90,7 @@
   transition-delay: 1.5s;
 }
 
-.wrapper .formBox.login .animation3{
+.wrapper .formBox.login .animation3 {
   transform: translateX(0%);
   transition: 0.7s ease;
   opacity: 1;
@@ -98,7 +98,7 @@
   transition-delay: 1.6s;
 }
 
-.wrapper .formBox.login .animation4{
+.wrapper .formBox.login .animation4 {
   transform: translateX(0%);
   transition: 0.7s ease;
   opacity: 1;
@@ -106,7 +106,7 @@
   transition-delay: 1.7s;
 }
 
-.wrapper .formBox.login .animation5{
+.wrapper .formBox.login .animation5 {
   transform: translateX(0%);
   transition: 0.7s ease;
   opacity: 1;
@@ -114,7 +114,7 @@
   transition-delay: 1.8s;
 }
 
-.wrapper .formBox.login .animation6{
+.wrapper .formBox.login .animation6 {
   transform: translateX(0%);
   transition: 0.7s ease;
   opacity: 1;
@@ -128,7 +128,7 @@
   /* display: none; */
 }
 
-button.animation4{
+button.animation4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +145,7 @@ button.animation4{
 .wrapper .formBox.register .animation1,
 .wrapper .formBox.register .animation2,
 .wrapper .formBox.register .animation3,
-button.animation4{
+button.animation4 {
   transform: translateX(150%);
   transition: 0.7s ease;
   transition-delay: 1.4s;
@@ -173,14 +173,14 @@ button.animation4{
   filter: blur(0);
 }
 
-.wrapper.active button.animation4{
+.wrapper.active button.animation4 {
   transition-delay: 1.8s;
   transform: translateX(0%);
   opacity: 1;
   filter: blur(0);
 }
 
-.wrapper .formBox.register .animation1{
+.wrapper .formBox.register .animation1 {
   transform: translateX(150%);
   transition: 0.7s ease;
   opacity: 0;
@@ -188,7 +188,7 @@ button.animation4{
   transition-delay: 0.1s;
 }
 
-.wrapper .formBox.register .animation2{
+.wrapper .formBox.register .animation2 {
   transform: translateX(150%);
   transition: 0.7s ease;
   opacity: 0;
@@ -196,7 +196,7 @@ button.animation4{
   transition-delay: 0.2s;
 }
 
-.wrapper .formBox.register .animation3{
+.wrapper .formBox.register .animation3 {
   transform: translateX(150%);
   transition: 0.7s ease;
   opacity: 0;
@@ -204,7 +204,7 @@ button.animation4{
   transition-delay: 0.3s;
 }
 
-button.animation4{
+button.animation4 {
   transform: translateX(150%);
   transition: 0.7s ease;
   opacity: 0;
@@ -355,7 +355,7 @@ h2 {
   color: #0ef;
 }
 
-.formBox a{
+.formBox a {
   width: 100%;
 }
 
@@ -417,6 +417,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: white;
 }
 
 .wrapper .infoText.login {
@@ -435,7 +436,7 @@ h2 {
   filter: blur(10px);
 }
 
-.wrapper .infoText.login{
+.wrapper .infoText.login {
   transform: translateX(0%);
   transition: 0.7s ease;
   opacity: 1;
@@ -453,20 +454,19 @@ h2 {
   filter: blur(10px);
 }
 
-.wrapper.active .infoText.register{
+.wrapper.active .infoText.register {
   transition-delay: 1.4s;
   opacity: 1;
   filter: blur(0);
   transform: translateX(0%);
 }
 
-.wrapper .infoText.register{
+.wrapper .infoText.register {
   transform: translateX(-70%);
   transition: 0.7s ease;
   opacity: 0;
   filter: blur(10px);
 }
-
 
 .infoText h3 {
   font-size: 28px;
@@ -498,7 +498,7 @@ h2 {
   transform: rotate(0deg) skewY(0deg);
 }
 
-.wrapper .bgAnimate{
+.wrapper .bgAnimate {
   transform: rotate(10deg) skewY(44deg);
   transition: 0.7s ease;
   transition-delay: 1.4s;
@@ -522,19 +522,66 @@ h2 {
   transform: rotate(-11deg) skewY(-45deg);
 }
 
-.wrapper .bgAnimate2{
+.wrapper .bgAnimate2 {
   transform: rotate(0deg) skewY(0deg);
   transition: 0.7s ease;
   transition-delay: 0.7s;
 }
 
-i{
+i {
   font-size: 20px;
   color: #fff;
 }
 
-
-.animation4 h4{
+.animation4 h4 {
   font-size: 18px;
   color: #fff;
+}
+
+/* ============================================================= */
+
+@media screen and (max-width: 651px) {
+  .wrapper {
+    margin: 30px;
+    /* overflow: visible; */
+  }
+
+  .wrapper .formBox {
+    width: 100%;
+    z-index: 10;
+  }
+
+  .formmobile {
+    width: 80%;
+  }
+
+  .wrapper .formBox.login {
+    left: 0;
+    padding: 0;
+  }
+
+  input {
+    z-index: 99;
+  }
+  .infoText {
+    display: none !important;
+  }
+
+  .wrapper .bgAnimate, .wrapper.active .bgAnimate, .wrapper .bgAnimate2, .wrapper.active .bgAnimate2 {
+    display: none;
+  }
+  
+  .formBox.register {
+    z-index: -1;
+  }
+
+  .wrapper.active .formBox.register{
+    z-index: 99;
+  }
+
+
+  .wrapper .formBox.register {
+  left: 0;
+  padding: 0 20px;
+}
 }
